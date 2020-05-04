@@ -256,7 +256,7 @@ footer {
 }
 
 .filter-title {
-  font-size: 1.0em;
+  font-size: 1.2em;
   font-weight: 900;
   color: #6d6d6d;
   text-align: center;
@@ -272,8 +272,91 @@ footer {
   padding: 0.5em 0em;
 }
 
+.filter-cont label {
+  font-weight: 900;
+  font-size: 0.8em;
+}
+
 .filter-cont input {
   width: 100%;
+  min-height: 2em;
+}
+
+.filter-cont select {
+  width: 100%;
+  min-height: 2em;
+  background-color: #ffffff;
+}
+
+.search-filter-btn {
+  font-weight: 900;
+  font-size: 0.8em;
+  color: #ffffff;
+  background-color: #17578b;
+  border-style: none;
+  border-radius: 0.3em;
+  min-height: 3em;
+  margin: 1em 0;
+}
+
+.clear-filter-btn {
+  font-weight: 900;
+  font-size: 0.8em;
+  color: #ffffff;
+  background-color: #d8a057;
+  border-style: none;
+  border-radius: 0.3em;
+  min-height: 3em;
+}
+
+.fa-eraser {
+  font-size: 1.2em;
+  padding-right: 0.3em;
+}
+
+.results-container {
+  margin-top: 2.5em;
+}
+
+.results-title {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.results-thumb-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.results-thumb {
+  background-image: url(img/vinyl-cover-dark.webp);
+  background-size: cover;
+  width: 15em;
+  height: 15em;
+  padding: 2em 1em;
+  color: #ffffff;
+  margin: 2em;
+  box-shadow: 0.5em 0.5em 1em #808080;
+}
+
+.results-thumb h3 {
+  font-size: 0.8em;
+  padding-bottom: 0.5em;
+}
+
+.results-thumb h4 {
+  font-size: 0.8em;
+  padding: 0.5em 0;
+}
+
+.results-thumb p {
+  font-size: 0.8em;
+  font-weight: 100;
+}
+
+.results-thumb p span {
+  font-weight: 900;
 }
 
 @media only screen and (min-width: 768px) {
