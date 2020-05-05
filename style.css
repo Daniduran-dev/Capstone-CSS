@@ -44,6 +44,7 @@ body {
   line-height: 1.5;
   font-family: spartan, Arial, Helvetica, sans-serif;
   background-color: #ffffff;
+  
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -74,16 +75,6 @@ button,
 textarea,
 select {
   font: inherit;
-}
-
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
 }
 
 header {
@@ -363,6 +354,127 @@ footer {
   color: #ffffff;
 }
 
+.main-padding {
+  padding: 1em;
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  /* margin-top: 2em; */
+  /* padding: 1em; */
+}
+
+.vinyl-title-cont {
+  text-align: center;
+  color: #D45749;
+  font-size: 0.8em;
+  padding-bottom: 1em;
+}
+
+.fa-record-vinyl {
+  padding-right: 0.5em;
+}
+
+.specs-container {
+  /* border: 1px gray solid; */
+  font-size: 0.85em;
+  /* padding: 1em; */
+  font-weight: 900;
+}
+
+.specs {
+  padding: 0.5em 0;
+}
+
+.specs-text span {
+  color: #519BD7;
+  padding-left: 0.5em;
+}
+
+.order {
+  background-color: #519BD7;
+  border-style: none;
+  color: #ffffff;
+  font-weight: 900;
+  width: 100%;
+  height: 2.5em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+.fa-shopping-cart {
+  padding-right: 0.5em;
+}
+
+.data-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: 0.8em;
+  font-weight: 900;
+}
+
+.data-list li {
+  padding: 0 1em;
+  width: 50%;
+
+}
+
+.data-list li a {
+  text-decoration: none;
+  color: #32a741;
+}
+
+.data-list li span {
+  color: #519BD7;
+}
+
+.data-list li i {
+  color: #519BD7;
+}
+
+.p1 {
+  padding-right: 0.5em;
+}
+
+.description {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+
+.details-button {
+  width: 100%;
+  text-align: left;
+  border-style: none;
+  margin-bottom: 2em;
+  font-size: 1em;
+  padding: 1em;
+  font-weight: 900;
+  color: #6d6d6d;
+}
+
+.fa-barcode {
+  padding-right: 0.5em;
+}
+
+.cover-art {
+  color: #CC5345;
+  text-align: center;
+  padding-bottom: 1em;
+  font-weight: 900;
+}
+
+.fa-palette {
+  padding-right: 0.5em;
+}
+
+
+
 @media only screen and (min-width: 768px) {
 
   header {
@@ -404,7 +516,8 @@ footer {
 
   .title {
     font-size: 1.6em;
-    font-weight: 550;
+    font-weight: 500;
+    font-family: spartan, Arial, Helvetica, sans-serif;
   }
 
   .search-form {
@@ -738,6 +851,117 @@ footer {
     padding-bottom: 2em;
   }
 
+  .main-padding {
+    padding: 2em;
+    font-size: 0.8em;
+  }
+
+  .data-container {
+    box-shadow: -0.01em -0.01em 0.5em gray;
+    padding: 1em
+  }
+
+  .vinyl-title-cont {
+    text-align: start;
+    margin-left: 5%;
+  }
+
+  .vinyl-title-cont h2 {
+    padding-left: 2em;
+  }
+
+  .data-container {
+    margin-top: 5em;
+  }
+
+  .vinyl-title-cont {
+    padding-top: 2em;
+    padding-bottom: 0em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    font-size: 1.1em;
+    font-weight: 100;
+  }
+
+  .vinyl-title-cont h1 {
+    font-weight: 100;
+  }
+
+  .vinyl-title-cont h2 {
+    font-weight: 400;
+  }
+
+  .fa-record-vinyl {
+    font-size: 1.2em;
+  }
+
+  .specs-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .specs {
+    border: 1px #d8d8d8 solid;
+    width: 45.5%;
+    padding: 0.7em;
+    margin: 0.5%;
+    text-align: center;
+  }
+
+  .order {
+    background-color: #519BD7;
+    border-style: none;
+    color: #ffffff;
+    font-weight: 900;
+    width: 7em;
+    height: 2.5em;
+    text-align: center;
+    float: right;
+    margin-right: 4.4%;
+    margin-top: 3em;
+  }
+
+  .data-list {
+    float: right;
+    align-self: flex-end;
+  }
+
+  .data-list li {
+    width: auto;
+    border-right: 1px solid #bebebe;
+    padding: 0 0.5em;
+    line-height: 2em;
+  }
+
+  .data-list li:last-child {
+    margin-right: 3em;
+  }
+
+  .description {
+    padding-top: 2em;
+    font-size: 1.3em;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .details-button {
+    font-size: 1.5em;
+  }
+
+  .fa-barcode {
+    font-size: 1.2em;
+  }
+
+  .cover-art {
+    font-size: 1.3em;
+    padding-top: 1em;
+    padding-bottom: 4em;
+  }
+
+
 }
 
 
@@ -906,4 +1130,27 @@ footer {
     padding-bottom: 0;
     padding-top: 0.8em;
   }
+
+  .main-padding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+  }
+
+  .data-container {
+    min-width: 1024px;
+    
+  }
+
+  .description {
+    max-width: 1177px;
+    font-size: 1.1em;
+  }
+
+  .details-button {
+    max-width: 1177px;
+  }
+
 }
