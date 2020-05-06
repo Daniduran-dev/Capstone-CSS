@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gramophone</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <script src="https://kit.fontawesome.com/4ee04584d2.js" crossorigin="anonymous"></script>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img class="logo-img" src="img/Gramophone-logo.png" alt="logo">
+      </a>
+      <a href="index.html">
+        <p class="logo-text">Gramophone</p>
+      </a>
+    </div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#"><i class="top-icons fas fa-search"></i></a></li>
+        <li><a href="#"><i class="top-icons fas fa-user"></i></a></li>
+        <li><a href="#"><i class="top-icons fas fa-rss"></i></a></li>
+        <li><a href="#"><i class="top-icons fas fa-bars"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="filter-container">
+      <h1 class="filter-title">Filter by title, year, genre, status and location:</h1>      
+      <form class="filter-form" action="#">
+        <div class="filter-cont">
+          <label for="title">TITLE:*</label><br>
+          <input type="text" id="title" name="title">
+        </div>
+        <div class="filter-cont">
+          <label for="year">YEAR:</label><br>
+          <select name="year" id="year">            
+            <option label=" "></option>
+            <option value="year">1950-1970</option>
+            <option value="year">1930-1950</option>
+            <option value="year">1910-1930</option>
+            <option value="year">1890-1910</option>
+            <option value="year">1870-1890</option>
+          </select>
+        </div>
+        <div class="filter-cont">
+          <label for="genre">GENRE:</label><br>
+          <select name="genre" id="genre">
+            <option label=" "></option>
+            <option value="genre">Rock&Roll</option>
+            <option value="genre">Classical</option>
+            <option value="genre">Jazz & Blues</option>
+            <option value="genre">Folk</option>
+            <option value="genre">Old styles</option>
+          </select>
+        </div>
+        <div class="filter-cont">
+          <label for="status">STATUS:</label><br>
+          <select name="status" id="status">
+            <option label=" "></option>
+            <option value="status">New</option>
+            <option value="status">Second hand</option>
+            <option value="status">To be restored</option>            
+          </select>
+        </div>
+        <div class="filter-cont">
+          <label for="location">LOCATION:</label><br>
+          <select name="location" id="location">
+            <option label=" "></option>
+            <option value="location">Local</option>
+            <option value="location">Continental</option>
+            <option value="location">Worldwide</option>            
+          </select>
+        </div>
+        <div class="filter-buttons-cont">
+          <input class="search-filter-btn" type="submit" value="Search">
+          <button class="clear-filter-btn" type="submit"><i class="fas fa-eraser"></i>Clear Filter</button>
+        </div>
+      </form> 
+    </section>
+    <section class="results-container">
+      <h2 class="results-title">Search Results Found 5 Shop(s)</h2>
+      <div class="results-thumb-cont">
+        <div class="results-thumb">
+          <a href="product.html" class="thumb-title">CHARLES MINGUS<br>JAZZICAL MODS</a>         
+          <a href="product.html" class="thumb-title">REDFALL RECORDS</a>          
+        </div>
+        <div class="results-thumb">
+          <a href="product.html" class="thumb-title">CHARLES MINGUS<br>JAZZICAL MODS</a>         
+          <a href="product.html" class="thumb-title">REDFALL RECORDS</a>          
+        </div>
+        <div class="results-thumb">
+          <a href="product.html" class="thumb-title">CHARLES MINGUS<br>JAZZICAL MODS</a>         
+          <a href="product.html" class="thumb-title">REDFALL RECORDS</a>          
+        </div>
+        <div class="results-thumb">
+          <a href="product.html" class="thumb-title">CHARLES MINGUS<br>JAZZICAL MODS</a>         
+          <a href="product.html" class="thumb-title">REDFALL RECORDS</a>          
+        </div>
+        <div class="results-thumb">
+          <a href="product.html" class="thumb-title">CHARLES MINGUS<br>JAZZICAL MODS</a>         
+          <a href="product.html" class="thumb-title">REDFALL RECORDS</a>          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="bottom-navbar">
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">SEARCH</a></li>
+        <li><a href="">ABOUT US</a></li>
+        <li><a href="">ADVERTISE</a></li>
+        <li id="img-cont"></li>
+        <li><a href="">FACEBOOK</a></li>
+        <li><a href="">TWITTER</a></li>
+        <li><a href="">BLOG</a></li>
+        <li><a href="">GOOGLE+</a></li>
+      </ul>
+      <a class="link-logo-footer" href="#"><img class="logo-footer" src="img/Gramophone-logo.png" alt="logo"></a>
+    </div>
+    <div class="footer-info">
+      <div class="subscribe info-box">
+        <h4>SUBSCRIBE</h4>
+        <form class="subscribe-form" action="#">          
+          <input class="subscribe-box" type="email" id="vinyl-title" name="vinyl-title" placeholder="Enter@email.com">
+          <input class="subscribe-button" type="submit" value="Send">          
+        </form>
+      </div>
+      <div class="contact info-box">
+        <h4>CONTACT</h4>
+        <p>Have a question or submission?<br>
+        <a href="#">info@gramophone.com</a></p>
+      </div>
+      <div class="about info-box">
+        <h4>ABOUT</h4>
+        <p>Gramophone is the main vinyls collectionist network in internet.<br><a href="#">Learn more...</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin-in"></i>        
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="copyright">
+        <p>©  GRAMOPHONE  2020.  ALL  RIGHTS  RESERVED.  POWERED  BY  <span><i class="fas fa-cat"></i> CODING  CAT. </span>  BE  GOOD,  BE  FAST.</p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
