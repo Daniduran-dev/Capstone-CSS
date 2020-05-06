@@ -36,6 +36,7 @@ Give a ⭐️ if you like this project!
 
 - Microverse
 - Stack Overflow
+- Original design by: Mathew Njuguna, Sam Achola
 
 ## 📝 License
 
