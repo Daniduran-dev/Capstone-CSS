@@ -189,7 +189,7 @@ header {
 }
 
 .bottom-navbar ul li {
-  padding: 0.5em 0em;
+  padding: 0.5em 0;
   min-width: 25%;
   text-align: center;
 }
@@ -240,6 +240,10 @@ header {
 .copyright p span {
   font-weight: 900;
   padding: 0 0.5em;
+}
+
+.data-list li i {
+  color: #519bd7;
 }
 
 .copyright p span i {
@@ -476,10 +480,6 @@ header {
 }
 
 .data-list li span {
-  color: #519bd7;
-}
-
-.data-list li i {
   color: #519bd7;
 }
 
