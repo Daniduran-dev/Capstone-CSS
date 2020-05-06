@@ -189,7 +189,9 @@ header {
 }
 
 .bottom-navbar ul li {
-  padding: 0.5em 0.9em;
+  padding: 0.5em 0em;
+  min-width: 25%;
+  text-align: center;
 }
 
 .bottom-navbar ul li a {
@@ -199,7 +201,7 @@ header {
   font-size: 0.6em;
 }
 
-.img-cont {
+#img-cont {
   display: none;
 }
 
@@ -223,10 +225,16 @@ header {
   color: #fff;
   font-size: 0.4em;
   padding: 0.5em 1em;
+  text-align: center;
 }
 
 .copyright p {
   padding: 0 0.4em 1em 0.4em;
+}
+
+.specs-text span {
+  color: #519bd7;
+  padding-left: 0.5em;
 }
 
 .copyright p span {
@@ -441,11 +449,6 @@ header {
 
 .specs {
   padding: 0.5em 0;
-}
-
-.specs-text span {
-  color: #519bd7;
-  padding-left: 0.5em;
 }
 
 .order {
@@ -731,6 +734,7 @@ header {
 
   .bottom-navbar ul li {
     padding: 0.1em 1em;
+    min-width: auto;
   }
 
   .info-box p a {
@@ -745,7 +749,7 @@ header {
     font-size: 0.6em;
   }
 
-  .img-cont {
+  #img-cont {
     display: inline;
     min-width: 5em;
   }
