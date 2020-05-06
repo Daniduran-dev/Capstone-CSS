@@ -225,12 +225,12 @@ footer {
 }
 
 .button-how {
+  display: block;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 0.3em;
   opacity: 0.9;
   border-style: none;
-  margin-top: 3em;
-  margin-left: 3em;
+  margin: 1em auto;
   font-size: 1.1em;
   font-variation-settings: 'wdth' 100, 'wght' 400;
   padding: 0.5em;
@@ -522,10 +522,6 @@ footer {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     background-color: #519bd7;
-  }
-
-  .button-how {
-    margin-left: 9em;
   }
 
   .second-container {
